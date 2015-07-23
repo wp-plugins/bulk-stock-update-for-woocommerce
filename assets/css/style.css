@@ -1,0 +1,88 @@
+.form_box{
+	padding:5px;
+	padding-top:0;
+	border:1px solid #CCC;
+	margin-top:15px;
+}
+
+.form_box .field_box, .form_box .field_label, .form_box .field_input, .form_box .field_input_text, .form_box .field_input_checkbox {
+	float:left;
+}
+
+.form_box .field_box{
+	margin-top:15px;
+
+}
+
+.form_box .field_box .field_label{ width:150px; margin-top:4px; margin-left:10px;}
+.form_box .field_box .field_input_text{ width:250px;}
+.form_box .field_box .field_input_checkbox{}
+.form_box .field_box .field_input_text	.form-text{ width:250px; font-size:14px; padding:8px;}
+
+.form_box .field_box.field_box_odd{
+	clear:both;						
+	}
+
+.form_box .clear_fix{
+	clear:both;}
+
+
+.submit_btn_box{
+	margin-top:10px;
+	margin-bottom:10px;
+	text-align:right;
+}
+
+th.ID{
+	width:40px;
+}
+th.edit_product, th.parent_edit{
+	width:30px;
+}
+
+select.manage_status.outofstock{
+	color:red;					
+}
+
+select.manage_status.instock{
+	color:green;
+}
+
+select.manage_status.outofstock option, select.manage_status.instock option{
+	color:#333;	
+}
+
+input[type=number].hide_fields:disabled{
+	color:#999;
+	border:none;
+	box-shadow:none;
+	text-align:left;
+}
+
+select.form_select{
+	border:none;
+	box-shadow:none;
+}
+
+input.menu_order {
+	width:70px;
+}
+
+.widefat_normal_table th.hide_column, .widefat_normal_table td.hide_column{ display:none;}
+
+#tab_btn_update_stock{
+	float:right;	
+}
+
+.grid_box {
+	position:relative;
+	}
+.grid_box .grid_loading{
+	position:absolute;
+	left:0;
+	top:0;
+	bottom:0;
+	right:0;
+	background-color:#FFF;
+	background:url(../images/please_wait.gif) center center no-repeat;
+}
