@@ -163,7 +163,7 @@ if(!class_exists("WM_WooCommerce_Update_Stock_Lite")){
 							echo '">' . esc_html( $value ) . '</a>';
 						}
 						
-						//echo '<a href="'.$admin_url.'&filter_page_name=update_stock" class="nav-tab" id="tab_btn_update_stock">'.__('Update Stock',	'wmwcuslite_textdomains').'</a>';
+						echo '<a href="'.$admin_url.'&filter_page_name='.$filter_page_name.'" class="button-primary onformprocess btnstockupdate" id="tab_btn_update_stock">'.__('Update Stock',	'wmwcuslite_textdomains').'</a>';
 					?></h2>
                     <form name="frm_search_results" id="frm_search_results" method="post" action="<?php echo $admin_url;?>">
                     <?php
@@ -269,7 +269,7 @@ if(!class_exists("WM_WooCommerce_Update_Stock_Lite")){
 						$tabindex = 1;
 						$output .=  '<form method="post" action="" id="update_stocks_form">';
 						
-							$output .=  "<div class=\"submit_btn_box\">";
+							$output .=  "<div class=\"submit_btn_box\" style=\"display:none; margin-top:5px;\">";
 							$output .=  "<input type=\"submit\" class=\"button-primary onformprocess\" name=\"update_stocks\" value=\"{$label_btn_update}\" tabindex=\"{$tabindex}\" />";
 							$output .=  "</div>";
 							$tabindex++;
@@ -297,9 +297,11 @@ if(!class_exists("WM_WooCommerce_Update_Stock_Lite")){
 							
 							
 							foreach($items as $key => $item):
-								$post_meta = get_post_meta($item->ID);								
+								$post_meta = $this->get_post_meta($item->ID);								
 								foreach($post_meta as $mkey => $mvalue):								
-									$items[$key]->$mkey = isset($mvalue[0]) ? $mvalue[0] : '';
+									if(!empty($mkey)){
+										$items[$key]->$mkey = isset($mvalue) ? $mvalue : '';
+									}
 								endforeach;																		
 							endforeach;
 							
@@ -309,8 +311,10 @@ if(!class_exists("WM_WooCommerce_Update_Stock_Lite")){
 							$output .=  "</thead>";
 							$output .=  "<tbody>";
 							foreach($items as $key => $item):
+							
+								$row_class = ($key%2==0) ? "even" : "alternate";
 								
-								$output .=  "<tr>";
+								$output .=  "<tr class=\"{$row_class}\">";
 									$td_value = "";
 									$_id 	= isset($item->ID) ? $item->ID : 0;
 									foreach($columns as $ckey => $citem):
@@ -592,6 +596,8 @@ if(!class_exists("WM_WooCommerce_Update_Stock_Lite")){
 				ORDER BY posts.post_title";
 			}
 			
+			//$sql .= " LIMIT 1";
+			
 			//echo $sql ;
 			
 			$items = $wpdb->get_results($sql);
@@ -603,14 +609,18 @@ if(!class_exists("WM_WooCommerce_Update_Stock_Lite")){
 				return array();
 			}
 			
+			
 			foreach($items as $key => $item):
-					$post_meta = get_post_meta($item->ID);								
-					foreach($post_meta as $mkey => $mvalue):								
-						$items[$key]->$mkey = isset($mvalue[0]) ? $mvalue[0] : '';
+					$post_meta = $this->get_post_meta($item->ID);
+					//$this->print_list($post_meta);
+					foreach($post_meta as $mkey => $mvalue):
+						if(!empty($mkey)){
+							$items[$key]->{$mkey} = isset($mvalue) ? $mvalue : '';
+						}
 					endforeach;	
 			endforeach;
 						
-			//$this->print_r($items);
+			//$this->print_list($items);
 						
 			return $items;
 		}
@@ -621,6 +631,29 @@ if(!class_exists("WM_WooCommerce_Update_Stock_Lite")){
 			$results = $wpdb->get_row($sql);
 			if($wpdb->num_rows <= 0){
 				return array();
+			}
+			return $results;
+		}
+		
+		function get_post_meta($post_id = 0,$meta_key = NULL){
+			global $wpdb;
+			if($meta_key){
+				$sql = "SELECT meta_value FROM {$wpdb->prefix}postmeta WHERE meta_key = '{$meta_key}'  AND  post_id = {$post_id} LIMIT 1";
+				$results = $wpdb->get_row($sql);
+				if($wpdb->num_rows <= 0){
+					return array();
+				}
+			}else{
+				$sql = "SELECT meta_value, meta_key FROM {$wpdb->prefix}postmeta WHERE post_id = {$post_id} AND LENGTH(TRIM(meta_key)) > 0";
+				$results = $wpdb->get_results($sql);
+				if($wpdb->num_rows <= 0){
+					return array();
+				}
+				$post_meta = array();
+				foreach($results as $item_key => $item_value){
+					$post_meta[$item_value->meta_key] = $item_value->meta_value;
+				}
+				return $post_meta;
 			}
 			return $results;
 		}

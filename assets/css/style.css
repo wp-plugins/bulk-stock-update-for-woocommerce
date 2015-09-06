@@ -70,13 +70,23 @@ input.menu_order {
 
 .widefat_normal_table th.hide_column, .widefat_normal_table td.hide_column{ display:none;}
 
-#tab_btn_update_stock{
-	float:right;	
+h2 a.btnstockupdate{
+	float:right;
 }
 
 .grid_box {
 	position:relative;
+	margin-top:5px;
 	}
+
+.widefat tr.alternate{
+	background-color: #f9f9f9;
+}
+
+.widefat tr.alternate input, .widefat tr.alternate select{
+	background-color: #f9f9f9;
+}
+
 .grid_box .grid_loading{
 	position:absolute;
 	left:0;
@@ -85,4 +95,170 @@ input.menu_order {
 	right:0;
 	background-color:#FFF;
 	background:url(../images/please_wait.gif) center center no-repeat;
+}
+
+.nav-tab{ outline:none;}
+
+
+h2 .nav-tab{
+	font-weight:normal;
+	color:#686868;
+}
+
+.widefat thead tr th, .widefat tbody tr td, .widefat tbody tr td select{
+	color:#686868;
+}
+/*body.admin-color-fresh*/
+body.admin-color-fresh .nav-tab, body.admin-color-fresh .nav-tab:hover{
+	background-color:#23282d;
+	color:#fff;
+}
+
+body.admin-color-fresh .nav-tab-active, body.admin-color-fresh .nav-tab-active:hover{
+	background-color:#0073aa;
+	color:#fff;
+	border-color:#0073aa;
+}
+
+/*body.admin-color-light*/
+body.admin-color-light .widefat thead tr th, body.admin-color-light .widefat tbody tr td, body.admin-color-light .widefat tbody tr td select{
+	color:#686868;
+}
+
+body.admin-color-light  .nav-tab, body.admin-color-light  .nav-tab:hover{
+	background-color:#e5e5e5;
+	color:#333;
+	
+}
+
+body.admin-color-light  .nav-tab-active, body.admin-color-light  .nav-tab-active:hover{
+	background-color:#888;
+	color:#fff;
+	font-weight:normal;
+	border-color:#888;
+}
+
+/*body.admin-color-sunrise*/
+body.admin-color-sunrise  .nav-tab, body.admin-color-sunrise  .nav-tab:hover{
+	background-color:#cf4944;
+	color:#fff;
+}
+
+body.admin-color-sunrise .nav-tab-active, body.admin-color-sunrise  .nav-tab-active:hover{
+	background-color:#dd823b;
+	color:#fff;
+	border-color:#dd823b;
+}
+
+
+/*body.admin-color-blue*/
+body.admin-color-blue  .nav-tab, body.admin-color-blue  .nav-tab:hover{
+	background-color:#52accc;
+	color:#fff;
+	border-color:#52accc;
+	border-bottom-style:solid;
+	border-bottom-width:1px;
+}
+
+body.admin-color-blue  .nav-tab-active, body.admin-color-blue  .nav-tab-active:hover{
+	background-color:#096484;
+	color:#fff;
+	border-color:#096484;
+}
+
+/*body.admin-color-blue*/
+body.admin-color-coffee  .nav-tab, body.admin-color-coffee  .nav-tab:hover{
+	background-color:#59524c;
+	color:#fff;
+	border-color:#59524c;
+	border-bottom-style:solid;
+	border-bottom-width:1px;
+}
+
+body.admin-color-coffee  .nav-tab-active, body.admin-color-coffee  .nav-tab-active:hover{
+	background-color:#c7a589;
+	color:#fff;
+	border-color:#c7a589;
+}
+
+body.admin-color-coffee h2.nav-tab-wrapper{
+  border-color: #59524c;
+}
+
+/*body.admin-color-blue*/
+body.admin-color-ectoplasm  .nav-tab, body.admin-color-ectoplasm  .nav-tab:hover{
+	background-color:#523f6d;
+	color:#fff;
+	border-color:#523f6d;
+	border-bottom-style:solid;
+	border-bottom-width:1px;
+}
+
+body.admin-color-ectoplasm  .nav-tab-active, body.admin-color-ectoplasm  .nav-tab-active:hover{
+	background-color:#a3b745;
+	color:#fff;
+	border-color:#a3b745;
+}
+
+body.admin-color-ectoplasm h2.nav-tab-wrapper{
+  border-color: #523f6d;
+}
+
+
+/*body.admin-color-midnight*/
+body.admin-color-midnight  .nav-tab, body.admin-color-midnight  .nav-tab:hover{
+	background-color:#363b3f;
+	color:#fff;
+	border-color:#363b3f;
+	border-bottom-style:solid;
+	border-bottom-width:1px;
+}
+
+body.admin-color-midnight  .nav-tab-active, body.admin-color-midnight  .nav-tab-active:hover{
+	background-color:#e14d43;
+	color:#fff;
+	border-color:#e14d43;
+}
+
+body.admin-color-midnight h2.nav-tab-wrapper{
+  border-color: #363b3f;
+}
+
+
+/*body.admin-color-ocean*/
+body.admin-color-ocean  .nav-tab, body.admin-color-ocean  .nav-tab:hover{
+	background-color:#738e96;
+	color:#fff;
+	border-color:#738e96;
+	border-bottom-style:solid;
+	border-bottom-width:1px;
+}
+
+body.admin-color-ocean  .nav-tab-active, body.admin-color-ocean  .nav-tab-active:hover{
+	background-color:#9ebaa0;
+	color:#fff;
+	border-color:#9ebaa0;
+}
+
+body.admin-color-ocean h2.nav-tab-wrapper{
+  border-color: #738e96;
+}
+
+/*body.admin-color-sunrise*/
+body.admin-color-sunrise  .nav-tab, body.admin-color-sunrise  .nav-tab:hover{
+	background-color:#cf4944;
+	color:#fff;
+	border-color:#cf4944;
+	border-bottom-style:solid;
+	border-bottom-width:1px;
+}
+
+body.admin-color-sunrise  .nav-tab-active, body.admin-color-sunrise  .nav-tab-active:hover{
+	background-color:#dd823b;
+	color:#fff;
+	border-color:#dd823b;
+}
+
+body.admin-color-sunrise h2.nav-tab-wrapper{
+  border-color: #cf4944;
 }

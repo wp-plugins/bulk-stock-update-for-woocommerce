@@ -29,6 +29,8 @@ jQuery(document).ready(function($){
 			var id = $(this).attr("id");								
 			var class_id  = id + "_update_stock";
 			
+			//alert("input.update_stock"+class_id)
+			
 			if(val == "yes" || val == "publish"){
 				
 				$("input.update_stock."+class_id).attr("disabled", false);
@@ -55,12 +57,20 @@ jQuery(document).ready(function($){
 			}
 			
 			if(val == "yes"){
-				var v = $.trim($("input.update_stock"+class_id).val());
+				var v = $.trim($("input."+class_id).val());
+				
+				//alert(val)
+				
+				//alert(class_id)
+				
+				//alert($("input."+class_id).parent().html());
 				if(v.length <= 0){
 					v = 0;
 				}
+				
 				v = parseInt(v);
-				$("input.update_stock."+class_id).val(v + 0);
+				//alert(v);
+				$("input.."+class_id).val(v + 0);
 				
 				
 				var backorder = $("select.manage_backorders."+class_id).val();
@@ -75,6 +85,11 @@ jQuery(document).ready(function($){
 				*/
 			}
 		});
+		
+		$("a.btnstockupdate").click(function(){
+			$("form#update_stocks_form").submit();
+			return false;
+		})
 	
 	
 		var ajax_processing = false;

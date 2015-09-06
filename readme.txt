@@ -1,9 +1,9 @@
 ==== Bulk Stock Update for WooCommerce ====
-Contributors: http://plugins.web-mumbai.com/
+Contributors: webmumbai
 Tags: bulk stock update, bulk stock mannage, update product stock, update prouct quantity, one page update stock
 Requires at least: 4.0
-Tested up to: 4.2
-Stable tag: 1.0
+Tested up to: 4.3
+Stable tag: 1.1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Donate link: http://plugins.web-mumbai.com/
@@ -26,11 +26,31 @@ Q: This product Pro Version availbale?
 A: Yes.
 
 == Changelog ==
+= 1.1.1 - 2015-09-06 =
+* Tested: tested in latest wordpress 4.3
+* Tested: tested in latest WooCommerce 2.4.6
+* Fix: Small bugs fixing
+
+
+= 1.1 - 2015-08-22 =
+* Tested: tested in latest wordpress 4.2.2
+* Tested: tested in latest WooCommerce 2.4.5
+* Added: Tab CSS
+
 = 1.0 =
 * Initial Release
 
 
 == Upgrade Notice ==
+= 1.1.1 - 2015-09-06 =
+* Tested: tested in latest wordpress 4.3
+* Tested: tested in latest WooCommerce 2.4.6
+* Fix: Small bugs fixing
+
+= 1.1 - 2015-08-22 =
+* Tested: tested in latest wordpress 4.2.2
+* Tested: tested in latest WooCommerce 2.4.5
+
 = 1.0 =
 * Initial Release
 
