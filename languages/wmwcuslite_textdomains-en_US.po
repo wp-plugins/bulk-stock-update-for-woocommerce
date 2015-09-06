@@ -1,0 +1,179 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WooCommerce Update Stock Lite v1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2015-07-11 02:22:36+0000\n"
+"Last-Translator: Plugin Support  <info.webmumbai@gmail.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: CSL v1.x\n"
+"X-Poedit-Language: English\n"
+"X-Poedit-Country: UNITED STATES\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
+"X-Poedit-Basepath: \n"
+"X-Poedit-Bookmarks: \n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Textdomain-Support: yes"
+
+#: wm-woocommerce-stock-update-lite.php:50
+#@ wmwcuslite_textdomains
+msgid "Update Stock Lite Version"
+msgstr ""
+
+#: wm-woocommerce-stock-update-lite.php:50
+#: wm-woocommerce-stock-update-lite.php:65
+#@ wmwcuslite_textdomains
+msgid "Update Stock Lite"
+msgstr ""
+
+#: wm-woocommerce-stock-update-lite.php:65
+#@ wmwcuslite_textdomains
+msgid "Update Stock"
+msgstr ""
+
+#: wm-woocommerce-stock-update-lite.php:124
+#@ wmwcuslite_textdomains
+msgid "Simple Products"
+msgstr ""
+
+#: wm-woocommerce-stock-update-lite.php:125
+#@ wmwcuslite_textdomains
+msgid "Variable Products"
+msgstr ""
+
+#: wm-woocommerce-stock-update-lite.php:126
+#@ wmwcuslite_textdomains
+msgid "Variation Products"
+msgstr ""
+
+#: wm-woocommerce-stock-update-lite.php:139
+#: wm-woocommerce-stock-update-lite.php:257
+#@ wmwcuslite_textdomains
+msgid "Yes"
+msgstr ""
+
+#: wm-woocommerce-stock-update-lite.php:140
+#: wm-woocommerce-stock-update-lite.php:258
+#@ wmwcuslite_textdomains
+msgid "No"
+msgstr ""
+
+#: wm-woocommerce-stock-update-lite.php:141
+#: wm-woocommerce-stock-update-lite.php:259
+#@ wmwcuslite_textdomains
+msgid "Do not allow"
+msgstr ""
+
+#: wm-woocommerce-stock-update-lite.php:142
+#: wm-woocommerce-stock-update-lite.php:260
+#@ wmwcuslite_textdomains
+msgid "Allow, but notify customer"
+msgstr ""
+
+#: wm-woocommerce-stock-update-lite.php:143
+#: wm-woocommerce-stock-update-lite.php:261
+#@ wmwcuslite_textdomains
+msgid "Allow"
+msgstr ""
+
+#: wm-woocommerce-stock-update-lite.php:144
+#: wm-woocommerce-stock-update-lite.php:262
+#@ wmwcuslite_textdomains
+msgid "All"
+msgstr ""
+
+#: wm-woocommerce-stock-update-lite.php:145
+#: wm-woocommerce-stock-update-lite.php:263
+#@ wmwcuslite_textdomains
+msgid "Out of Stock"
+msgstr ""
+
+#: wm-woocommerce-stock-update-lite.php:146
+#: wm-woocommerce-stock-update-lite.php:264
+#@ wmwcuslite_textdomains
+msgid "Instock"
+msgstr ""
+
+#: wm-woocommerce-stock-update-lite.php:211
+#: wm-woocommerce-stock-update-lite.php:221
+#@ wmwcuslite_textdomains
+msgid "Product Name"
+msgstr ""
+
+#: wm-woocommerce-stock-update-lite.php:212
+#: wm-woocommerce-stock-update-lite.php:222
+#: wm-woocommerce-stock-update-lite.php:232
+#@ wmwcuslite_textdomains
+msgid "Manage Stock"
+msgstr ""
+
+#: wm-woocommerce-stock-update-lite.php:213
+#: wm-woocommerce-stock-update-lite.php:223
+#: wm-woocommerce-stock-update-lite.php:233
+#@ wmwcuslite_textdomains
+msgid "Stock"
+msgstr ""
+
+#: wm-woocommerce-stock-update-lite.php:214
+#: wm-woocommerce-stock-update-lite.php:224
+#: wm-woocommerce-stock-update-lite.php:234
+#@ wmwcuslite_textdomains
+msgid "Backorders"
+msgstr ""
+
+#: wm-woocommerce-stock-update-lite.php:215
+#: wm-woocommerce-stock-update-lite.php:235
+#@ wmwcuslite_textdomains
+msgid "Stock Status"
+msgstr ""
+
+#: wm-woocommerce-stock-update-lite.php:216
+#: wm-woocommerce-stock-update-lite.php:225
+#@ wmwcuslite_textdomains
+msgid "Sold Individually"
+msgstr ""
+
+#: wm-woocommerce-stock-update-lite.php:217
+#: wm-woocommerce-stock-update-lite.php:226
+#: wm-woocommerce-stock-update-lite.php:238
+#: wm-woocommerce-stock-update-lite.php:265
+#@ wmwcuslite_textdomains
+msgid "Edit"
+msgstr ""
+
+#: wm-woocommerce-stock-update-lite.php:227
+#: wm-woocommerce-stock-update-lite.php:242
+#@ wmwcuslite_textdomains
+msgid "ID"
+msgstr ""
+
+#: wm-woocommerce-stock-update-lite.php:231
+#@ wmwcuslite_textdomains
+msgid "Parent Name"
+msgstr ""
+
+#: wm-woocommerce-stock-update-lite.php:236
+#@ wmwcuslite_textdomains
+msgid "Enabled"
+msgstr ""
+
+#: wm-woocommerce-stock-update-lite.php:237
+#@ wmwcuslite_textdomains
+msgid "Variation Order"
+msgstr ""
+
+#: wm-woocommerce-stock-update-lite.php:82
+#@ wmwcuslite_textdomains
+msgid "Please Wait!"
+msgstr ""
+
+#: wm-woocommerce-stock-update-lite.php:266
+#@ wmwcuslite_textdomains
+msgid "Update"
+msgstr ""
+
